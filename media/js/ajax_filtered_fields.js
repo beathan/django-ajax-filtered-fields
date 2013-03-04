@@ -1,3 +1,7 @@
+if (django.jQuery) {
+    var $ = django.jQuery;
+}
+
 ajax_filtered_fields = {
     
     request_url: "/ajax_filtered_fields/json_index/",
