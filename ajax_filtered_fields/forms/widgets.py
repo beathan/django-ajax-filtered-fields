@@ -63,7 +63,7 @@ class FilteredSelectMultiple(forms.SelectMultiple):
                 });
             </script>
         """ % (lookups_output, parent_output, name, 
-            verbose_name, settings.ADMIN_MEDIA_PREFIX)
+            verbose_name, "%sadmin/" % settings.STATIC_URL)
         
         return mark_safe(output)
         
